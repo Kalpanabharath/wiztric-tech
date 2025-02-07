@@ -1,0 +1,347 @@
+
+
+
+/* hero-section */
+.hero-section-container{
+  width: 100%;
+  height: 70vh;
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../assets/images/wiztric-tech-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+hr{
+  margin: 0;
+}
+.hero-section-content{
+  width: 90%;
+
+}
+
+.hero-section-content{
+  
+  top:80%;
+  border-radius: 10px;
+  
+
+}
+.single-content{
+  border-radius: 10px;
+  background: linear-gradient(to bottom left, var(--dark-green), var(--light-green));
+  padding: 10px;
+  height:43vh;
+    
+
+}
+.hero-content-title{
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  font-family: Figtree, sans-serif;
+ 
+
+}
+.hero-content-para{
+  font-size: 15px;
+  font-weight:500 ;
+  color: black;
+  font-family: Figtree, sans-serif;
+
+}
+@media (max-width: 767px){
+  .hero-section-content{
+  
+    top:90%;
+    
+    
+  
+  }
+  .single-content{
+ 
+    height: max-content;
+  
+  }
+  .hero-content-title{
+    font-size: 15px;
+    
+   
+  
+  }
+  .hero-content-para{
+    font-size: 12px;
+   
+  
+  }
+}
+
+
+/* hero-section */
+/*** who we are  start ***/
+.who-we-are {
+  background-color: var(--black);
+  z-index: 0;
+  height: 100vh;
+  margin-top: 20vh;
+  font-family: Figtree, sans-serif;
+}
+.who-we-are-container {
+  padding: 0;
+  position: relative;
+
+  height: fit-content;
+}
+
+.who-we-are-img {
+  width: 95%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 0.9;
+  filter: brightness(100%) contrast(100%) saturate(0%) blur(0px)
+    hue-rotate(0deg);
+  transition-duration: 1s;
+  border-radius: 14px;
+  background-size: cover;
+  height: 100%;
+  margin-left: 5%;
+}
+.who-we-are-img:hover {
+  filter: none;
+  opacity: 1;
+}
+.who-we-are-list {
+  position: absolute;
+  z-index: 20;
+  bottom: -2%;
+  left: -2%;
+  overflow: visible;
+}
+.fa-circle-check {
+  color: var(--dark-green);
+  background-color: black;
+}
+
+.who-we-are-list li {
+  list-style: none;
+  padding: 10px;
+  /* color: var(--white-text); */
+  color: white;
+}
+.centered-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  text-align: center; /* Center align the text of <li> elements */
+  padding: 10px;
+  border-radius: 7px;
+  background-color: black;
+  opacity: 0.9;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.centered-list li {
+  display: flex; /* Optional: Can use block for vertical stacking */
+  align-items: center;
+  margin: 0.5rem; /* Add some spacing if needed */
+  padding: 10px;
+  border-bottom: 1px solid var(--background-dark);
+  width: 220px;
+}
+.centered-list li:last-child {
+  border-bottom: none !important;
+}
+.centered-list li i {
+  margin-right: 20px;
+}
+.who-we-are-para {
+  color: var(--light-green);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Figtree, sans-serif;
+  width: 90%;
+}
+.who-we-are-title {
+  color: var(--white-text);
+  width: 90%;
+}
+.who-we-are-subpara {
+  width: 75%;
+  color: var(--background-dark);
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+}
+.who-we-are-text-hr {
+  width: 100%;
+  color: var(--background-dark);
+  height: 5px;
+  opacity: 1;
+}
+.count {
+  color: var(--white-text);
+}
+.count-name {
+  color: var(--background-dark);
+}
+
+@media (max-width: 767px) {
+  .who-we-are {
+    height: 165vh  !important;
+    margin-top: 52vh;
+  }
+  .who-we-are-img {
+    height: 400px;
+  }
+  .who-we-are-list {
+    left: -1%;
+  }
+  .who-we-are-list li {
+    padding: 5px;
+  }
+  .centered-list li {
+    font-size: 15px;
+    margin: 0.2rem; 
+    padding: 5px;
+    width: 250px;
+  }
+  .who-we-are-subpara {
+    width: 100%;
+  }
+  .who-we-are {
+    height: fit-content;
+  }
+  .who-we-are-text-hr {
+    width: 100%;
+  }
+}
+@media (max-width: 1327px) {
+  .who-we-are-list li {
+    padding: 5px;
+  }
+  .centered-list li {
+    font-size: 15px;
+    margin: 0.2rem; 
+    padding: 5px;
+    width: 220px;
+  }
+}
+@media(min-width:1754px){
+  .who-we-are-title{
+     font-family: 1.5vw;
+  }
+  .who-we-are-subpara{
+    font-size: 1.3vw;
+  }
+}
+/*** who we are  end ***/
+
+/* product section start */
+.product .nav-pills .nav-item{
+  border-right: 1px solid #ccc;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+.product .nav-pills .nav-link {
+  color: black!important;
+  font-size: 1rem; /* Default size */
+  font-weight: 400;
+}
+
+.product .nav-pills .nav-link.active {
+  color:#82b440 !important;
+  background-color: transparent !important;
+  /* font-weight: bold; */
+ 
+}
+
+/* card */
+
+
+.blog-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+.date-badge {
+  position: absolute;
+  top: 35%;
+  left: 10px;
+  background: #002147;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.date-badge span {
+  display: block;
+  font-size: 14px;
+}
+.date-badge small {
+  font-size: 12px;
+}
+.blog-content {
+  padding: 20px;
+  background: #fff;
+}
+.blog-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.blog-meta {
+  font-size: 14px;
+  color: #6c757d;
+}
+.blog-meta i {
+ 
+
+  margin-right: 5px;
+}
+.blog-text {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 10px;
+}
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+.card-img{
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.card, .card-img {
+  border-radius: 0 !important;
+}
+
+
+@media (min-width: 768px) {
+  .product .nav-pills .nav-link {
+      font-size: 1.25rem; /* Larger font on bigger screens */
+  }
+}
+
+
+
+.product .tab-content {
+  margin-top: 20px;
+}
+/* product section end */
+
+

@@ -1,0 +1,73 @@
+/* ubdated navbar start */
+.logoimage {
+  width: 150px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: rgb(253, 251, 251) !important;
+  font-family: Figtree, sans-serif !important;
+
+  z-index: 1000;
+  height: 9vh !important;
+  min-height: 45px;
+  max-height: 42px;
+  color: black  !important;
+  height: 9vh;
+  min-height: 45px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+
+}
+
+.nav-link{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-text);
+  color: black;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 15px;
+  
+  
+}
+.nav-item {
+  position: relative;
+}
+.header-navbar .nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: green;
+}
+.nav-link:hover{
+ 
+  color: var(--dark-green);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-link:focus, 
+.nav-link:hover, 
+.nav-link:active, 
+.nav-link.show {
+  color: green !important;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+      gap: 2vw;
+  }
+}
+
+/* ubdated navbar end */
