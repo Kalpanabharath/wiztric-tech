@@ -3,17 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* * {
   outline: 1px solid red;
 } */
 
+.scrollable-element {
+  overflow: hidden;
+}
+
 body {
   overflow-x: hidden;
   background-color: var(--black);
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
+
 :root {
   --background-dark: #545454;
   --dark-green: rgb(114, 237, 184);
@@ -21,6 +34,7 @@ a {
   --white-text: #111111;
   --black: rgb(253, 253, 253);
 }
+
 .buttion {
   border: 1px solid white;
   border-radius: 30px;
@@ -32,6 +46,7 @@ a {
   font-weight: 500;
   z-index: 10;
 }
+
 .Active {
   border: none;
 }
@@ -39,6 +54,7 @@ a {
 .buttion:hover {
   background-color: var(--light-green);
 }
+
 .linear-gradient-text {
   background-image: url(../assets/images/bg-text.png);
   background-position: center center;
@@ -54,6 +70,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
 /* Hide scrollbar for Firefox */
 body {
   scrollbar-width: none;
@@ -63,6 +82,7 @@ body {
 body {
   -ms-overflow-style: none;
 }
+
 .sup-heading {
   color: var(--light-green);
   font-size: 14px;
@@ -71,6 +91,7 @@ body {
   font-family: Figtree, sans-serif;
   width: 90%;
 }
+
 .title {
   color: var(--white-text);
   width: 90%;
@@ -82,6 +103,7 @@ body {
 .team-container {
   width: 80vw;
 }
+
 .our-team-para {
   color: var(--light-green);
   font-size: calc(12px + 1vw);
@@ -90,6 +112,7 @@ body {
   font-family: Figtree, sans-serif;
   width: 90%;
 }
+
 .team-image {
   width: 100%;
   height: 100%;
@@ -97,6 +120,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 /* our team  end */
 @media (max-width: 767px) {
   .buttion {

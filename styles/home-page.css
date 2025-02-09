@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   color: white;
 }
+
 .hero-section-content {
   width: 90%;
 }
@@ -21,11 +22,13 @@ hr {
   top: 80%;
   border-radius: 10px;
 }
+
 .single-content {
   padding: 10px;
 
   height: 43vh;
 }
+
 .hero-section-single-content {
   background: linear-gradient(
     to bottom left,
@@ -38,35 +41,42 @@ hr {
   align-items: center;
   justify-content: center;
 }
+
 .hero-content-title {
   font-size: 18px;
   font-weight: 800;
   color: black;
   font-family: Figtree, sans-serif;
 }
+
 .hero-content-para {
   font-size: 15px;
   font-weight: 500;
   color: black;
   font-family: Figtree, sans-serif;
 }
+
 @media (max-width: 767px) {
   .hero-section-single-content {
     flex-direction: column;
     height: fit-content;
     padding: 10px;
   }
+
   .hero-section-content {
     top: 90%;
   }
+
   .single-content {
     height: max-content;
     padding: 0;
     margin: 0;
   }
+
   .hero-content-title {
     font-size: 15px;
   }
+
   .hero-content-para {
     font-size: 12px;
   }
@@ -82,10 +92,10 @@ hr {
   font-family: Figtree, sans-serif;
   overflow-x: hidden;
 }
+
 .who-we-are-container {
   padding: 0;
   position: relative;
-
   height: fit-content;
 }
 
@@ -102,10 +112,12 @@ hr {
   height: 100%;
   margin-left: 5%;
 }
+
 .who-we-are-img:hover {
   filter: none;
   opacity: 1;
 }
+
 .who-we-are-list {
   position: absolute;
   z-index: 20;
@@ -113,6 +125,7 @@ hr {
   left: -2%;
   overflow: visible;
 }
+
 .fa-circle-check {
   color: var(--dark-green);
   background-color: black;
@@ -124,10 +137,13 @@ hr {
   /* color: var(--white-text); */
   color: white;
 }
+
 .centered-list {
-  list-style: none; /* Remove bullet points */
+  list-style: none;
+  /* Remove bullet points */
   padding: 0;
-  text-align: center; /* Center align the text of <li> elements */
+  text-align: center;
+  /* Center align the text of <li> elements */
   padding: 10px;
   border-radius: 7px;
   background-color: black;
@@ -137,19 +153,22 @@ hr {
 }
 
 .centered-list li {
-  display: flex; /* Optional: Can use block for vertical stacking */
+  display: flex;
   align-items: center;
-  margin: 0.5rem; /* Add some spacing if needed */
+  margin: 0.5rem;
   padding: 10px;
   border-bottom: 1px solid var(--background-dark);
   width: 220px;
 }
+
 .centered-list li:last-child {
   border-bottom: none !important;
 }
+
 .centered-list li i {
   margin-right: 20px;
 }
+
 .who-we-are-para {
   color: var(--light-green);
   font-size: 14px;
@@ -158,28 +177,34 @@ hr {
   font-family: Figtree, sans-serif;
   width: 90%;
 }
+
 .who-we-are-title {
   color: var(--white-text);
   width: 90%;
 }
+
 .who-we-are-subpara {
   width: 75%;
   color: var(--background-dark);
   font-family: Inter, sans-serif;
   font-weight: 400;
 }
+
 .who-we-are-text-hr {
   width: 100%;
   color: var(--background-dark);
   height: 5px;
   opacity: 1;
 }
+
 .count {
   color: var(--white-text);
 }
+
 .count-name {
   color: var(--background-dark);
 }
+
 @media (max-width: 985px) {
   .who-we-are {
     margin-top: 69vh !important;
@@ -192,21 +217,26 @@ hr {
     height: auto !important;
     margin-top: 52vh !important;
   }
+
   .who-we-are-img {
     height: 400px;
   }
+
   .who-we-are-list {
     left: -1%;
   }
+
   .who-we-are-list li {
     padding: 5px;
   }
+
   .centered-list li {
     font-size: 15px;
     margin: 0.2rem;
     padding: 5px;
     width: 250px;
   }
+
   .who-we-are-subpara {
     width: 100%;
   }
@@ -220,6 +250,7 @@ hr {
   .who-we-are-list li {
     padding: 5px;
   }
+
   .centered-list li {
     font-size: 15px;
     margin: 0.2rem;
@@ -227,14 +258,17 @@ hr {
     width: 220px;
   }
 }
+
 @media (min-width: 1754px) {
   .who-we-are-title {
     font-family: 1.5vw;
   }
+
   .who-we-are-subpara {
     font-size: 1.3vw;
   }
 }
+
 /*** who we are  end ***/
 
 /* product section start */
@@ -247,7 +281,8 @@ hr {
 
 .product .nav-pills .nav-link {
   color: black !important;
-  font-size: 1rem; /* Default size */
+  font-size: 1rem;
+  /* Default size */
   font-weight: 400;
 }
 
@@ -265,10 +300,12 @@ hr {
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .blog-card img {
   width: 100%;
   height: auto;
 }
+
 .date-badge {
   position: absolute;
   bottom: 0px;
@@ -281,21 +318,26 @@ hr {
   text-align: center;
   z-index: 10;
 }
+
 .date-badge span {
   display: block;
   font-size: 14px;
 }
+
 .date-badge small {
   font-size: 12px;
 }
+
 .blog-content {
   padding: 20px;
   background: #fff;
 }
+
 .blog-title {
   font-size: 18px;
   font-weight: bold;
 }
+
 .blog-meta {
   font-size: 14px;
   color: #6c757d;
@@ -305,15 +347,18 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .blog-meta i {
   color: var(--light-green);
   margin-right: 5px;
 }
+
 .blog-text {
   font-size: 14px;
   color: #6c757d;
   margin-top: 10px;
 }
+
 .read-more {
   display: inline-block;
   /* margin-top: 10px; */
@@ -322,29 +367,35 @@ hr {
   text-decoration: none;
   font-size: min(14px, 4vw) !important;
 }
+
 .read-more:hover {
   text-decoration: underline;
 }
+
 .card,
 .card-img {
   border-radius: 0 !important;
 }
+
 .card-img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  transition: transform 1s ease-in-out; /* Smooth scaling transition */
+  transition: transform 1s ease-in-out;
+  /* Smooth scaling transition */
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
 }
+
 .image-container {
   transition: all 5s ease-in-out;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* This ensures only the image is clipped */
+  overflow: hidden;
+  /* This ensures only the image is clipped */
   padding-bottom: 27px;
   /* overflow: hidden; */
 }
@@ -370,6 +421,7 @@ hr {
   opacity: 1;
   height: 100%;
 }
+
 .image-container:hover .card-img {
   -webkit-transform: scale(1.3);
   transform: scale(1.1);
@@ -377,13 +429,15 @@ hr {
 
 @media (min-width: 768px) {
   .product .nav-pills .nav-link {
-    font-size: 1.25rem; /* Larger font on bigger screens */
+    font-size: 1.25rem;
+    /* Larger font on bigger screens */
   }
 }
 
 .product .tab-content {
   margin-top: 20px;
 }
+
 /* product section end */
 
 /* team section start */
@@ -393,14 +447,18 @@ hr {
   overflow: hidden;
   border-radius: 8px;
   width: 100%;
-  height: auto; /* Fixed height for consistent scaling */
+  height: auto;
+  /* Fixed height for consistent scaling */
   overflow-x: hidden;
 }
+
 .team-menber-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Keeps aspect ratio */
-  transition: transform 0.5s ease; /* Smooth zoom effect */
+  object-fit: cover;
+  /* Keeps aspect ratio */
+  transition: transform 0.5s ease;
+  /* Smooth zoom effect */
   overflow: hidden;
   border-radius: 8px;
   background-size: contain;
@@ -412,31 +470,38 @@ hr {
   align-items: center;
   padding: 20px 0;
 }
+
 .section-title {
   font-size: 14px;
-  color: #0d2b74; /* Adjust color */
+  color: #0d2b74;
+  /* Adjust color */
   font-weight: 600;
 }
+
 .main-title {
   font-size: 32px;
   font-weight: bold;
   color: #000;
 }
+
 .main-title em {
   font-style: italic;
   color: #0d2b74;
 }
+
 .divider {
   width: 2px;
   height: 50px;
   background-color: #ddd;
   margin: 0 50px;
 }
+
 .description {
   font-size: 14px;
   color: #444;
   max-width: 400px;
 }
+
 .read-more-btn {
   border: 1px solid #000;
   padding: 8px 15px;
@@ -446,10 +511,12 @@ hr {
   color: #000;
   transition: 0.3s;
 }
+
 .read-more-btn:hover {
   background-color: var(--dark-green);
   color: #131212;
 }
+
 /* slider */
 .slick-slide {
   margin: 0 !important;
@@ -548,8 +615,10 @@ hr {
 .team-card:hover .social-icons {
   visibility: visible;
   opacity: 1;
-  width: 40px; /* Set a specific width to enable transition */
+  width: 40px;
+  /* Set a specific width to enable transition */
 }
+
 .team-card:hover .team-info {
   border-bottom: 4px solid var(--dark-green);
 }
@@ -568,19 +637,24 @@ hr {
   flex-direction: column;
   align-items: center;
 }
+
 @media (max-width: 768px) {
   .divider {
     display: none;
   }
 }
+
 /* team section end */
 
 /* footer section start */
+/* Remove space at the bottom of the footer */
 
 .footer {
   background-color: #1e1e1e;
   padding: 40px 0;
   overflow-x: hidden;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .footer a {
@@ -600,6 +674,7 @@ hr {
   margin-bottom: 16px;
   color: #ffff;
 }
+
 .wiztric-footer-content {
   color: #777;
 }
@@ -618,10 +693,13 @@ hr {
   padding-top: 10px;
   color: #777;
 }
+
 .footer-container {
   justify-content: space-between;
 }
+
 .footerborder {
   color: #555;
 }
+
 /* footer section end */
