@@ -1,4 +1,9 @@
 AOS.init();
+AOS.refresh();
+AOS.init({
+  offset: 100, // Start animation 100px before scrolling into view
+ 
+});
 // document.addEventListener("DOMContentLoaded", function () {
 //     const dropdowns = document.querySelectorAll(".nav-item.dropdown");
 
@@ -76,3 +81,41 @@ $(document).ready(function () {
     ],
   });
 });
+
+
+// isotope
+
+document.addEventListener("DOMContentLoaded", function () {
+    var grid = document.querySelector("#blog-grid"); // Selecting the grid container
+
+    // Check if Isotope is loaded and the grid exists
+    if (typeof Isotope === "undefined" || !grid) {
+        console.error("Isotope is not loaded or the grid container was not found.");
+        return;
+    }
+
+    // Initialize Isotope
+    var iso = new Isotope(grid, {
+        itemSelector: ".col-md-4", // Targeting grid items
+        layoutMode: "fitRows" // Arrange items in a grid
+    });
+
+    // Select all filter buttons
+    var filterButtons = document.querySelectorAll(".nav-link");
+
+    filterButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            var filterValue = this.getAttribute("data-filter");
+
+            // Apply the filter using Isotope
+            iso.arrange({ filter: filterValue });
+
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active"); // Add active class to the clicked button
+        });
+    });
+});
+
+
+
